@@ -1,7 +1,7 @@
 process split {
     container 'ubuntu:latest'
     input:
-    file input from Channel.fromPath('/mount/input.txt')
+    file input from Channel.fromPath('/workspace/data/input.txt')
 
     output:
     file 'chunk_??' into input_channel
