@@ -28,7 +28,7 @@ process chunk {
     tuple val(key), file('input_*') into file_stream
 
     """
-    split $part -l 250000 input_
+    split $part -l 50000000 input_
     """
 }
 
